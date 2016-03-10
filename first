@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+	<div id="header">
+		<div class="top"></div>
+		<div class="nav">
+			<div class="nav-iner">
+				<div class="nav-iner-left">
+					<img src="images/logo.png" alt="">
+				</div>
+				<div class="nav-iner-right">
+					<ul>
+						<li><a href="">about application</a></li>
+						<li><a href="">register</a></li>
+						<li><a href="">demo</a></li>
+						<li><a href="">help</a></li>
+						<li><a href="">contact</a></li>
+					</ul>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<div id="banner">
+		<div class="banner-iner">
+			<div class="banner-iner-1">
+				<h3>Welcome to Web Aplication</h3>
+				<p>Give me that mattock and the wrenchingiron．Hold，take this letter；early in the morningSee thou deliver it to my lord and father．Give me the light：upon thy life，I charge thee，Whate'erthou hear'st or seest，stand all aloof，And do not interrupt me in my course．Why I descend into this bed of death，Is partly to behold my lady's face；But chiefly to take thence from her dead fingerA precious ring．</p>
+			</div>
+			<div class="banner-iner-2">
+				<img src="images/banner-iner-2.png" alt="">
+			</div>
+			<div class="banner-bottom">
+				<img src="images/banner-bottom.png" alt="">
+			</div>
+		</div>
+	</div>
+	<div id="container">
+		<div class="container-top">
+			<ul>
+				<li>What's <font color="#863a2a">New?</font></li>
+				<li>User <font color="#863a2a">Statistics</font></li>
+				<li>About <font color="#863a2a">Web Application</font></li>
+			</ul>
+		</div>
+		<div class="container-left">
+			<p>Give me that mattock and the wrenchingiron．Hold，take this letter；early in the morningSee thou deliver it to my lord and father．Give me the light：upon thy life，I charge thee，Whate'erthou hear'st or seest，stand all aloof，And do not interrupt me in my course．Why I descend into this bed of death，Is partly to behold my lady's face；But chiefly to take thence from her dead fingerA precious ring．</p>
+		</div>
+		<div class="container-middle">
+			<p>Give me that mattock and the wrenchingiron．Hold，take this letter；early in the morningSee thou deliver it to my lord and father．Give me the light：upon thy life，I charge thee，Whate'erthou hear'st or seest，stand all aloof，And do not interrupt me in my course．Why I descend into this bed of death，Is partly to behold my lady's face；But chiefly to take thence from her dead fingerA precious ring．</p>
+		</div>
+		<div class="container-right">
+			<p>Give me that mattock and the wrenchingiron．Hold，take this letter；early in the morningSee thou deliver it to my lord and father．Give me the light：upon thy life，I charge thee</p>
+			<div class="container-bottom">
+				<p>
+					If you like this template,you might like some other <a href="">Free</a> or <a href="">Commercial</a> CSS template from <a href="">Solucija</a>
+				</p>
+			</div>
+		</div>
+
+	</div> 
+    <div id="footer">
+    	<div class="footer-left">
+    		<p>
+    			@Copyright 2007 <a href="">Web Application</a>·All Rights Reserved
+    		</p>
+    	</div>
+
+    	<div class="footer-right">
+    		<p>Design: <a href="">Luka Cvrk</a>·Sponsor <a href="">Credit Cards</a></p>
+    		<img src="images/footer.png" alt="">
+    	</div>
+    </div>
+</body>
+</html>
