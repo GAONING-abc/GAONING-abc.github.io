@@ -4,6 +4,7 @@
 }
 #top{
 	height: 143px;
+	min-width: 1000px;
 	background-color: #000;
 }
 .top-iner{
@@ -38,6 +39,7 @@
 }
 #banner{
 	height: 347px;
+	min-width: 1000px;
 	background-color: #111212;
 }
 .banner-iner{
@@ -101,6 +103,7 @@
 	bottom:29px;
 }
 #container{
+	min-width: 1000px;
 	height: 896px;
 	background-color: #1d1f1f;
 }
@@ -301,6 +304,7 @@
 	font-size: 10px;
 }
 #footer{
+	min-width: 1000px;
 	height: 150px;
 	background-color: #000;
 }
