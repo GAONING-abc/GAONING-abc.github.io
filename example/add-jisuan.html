@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+		<style>
+		 	*{
+		 		margin: 0px;
+		 		padding: 0px;
+		 	}
+			
+		</style>
+</head>
+<body>
+	<input class="txt-1" type="text">
+	<input class="sign" type="text">
+	<input class="txt-2" type="text">=
+	<input class="txt-3" type="text">	
+	<input class="bt" type="button" value="计算">
+	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<script>
+		$(".bt").click(function(){
+			var num1 = Number($(".txt-1").val());
+			var num2 = Number($(".txt-2").val());
+			var sign = $(".sign").val()
+			if(sign=="+"){
+				var num3 = num1 + num2;
+			}
+			if(sign=="-"){
+				var num3 = num1 - num2;
+			}
+			if(sign=="*"){
+				var num3 = num1 * num2;
+			}
+			if(sign=="/"){
+				var num3 = num1 / num2;
+			}
+			$(".txt-3").val(num3)
+		})	
+			
+	</script> 
+	
+</body>
+</html>

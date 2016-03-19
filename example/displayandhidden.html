@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+		<style>
+		 	.box{
+		 		width: 100px;
+		 		height: 50px;
+		 		background-color: red;
+		 	}
+		</style>
+</head>
+<body>
+
+    <input id="hide" type="button" value="隐藏">
+    <input id="show" type="button" value="显示">
+    <input id="down" type="button" value="下拉">
+    <input id="up" type="button" value="上卷">
+    <input id="out" type="button" value="渐出">
+    <input id="in" type="button" value="渐入">
+    <input id="tg" type="button" value="显示隐藏切换">
+    <input id="ft" type="button" value="渐出渐入切换">
+	<div class="box"></div>
+	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<script>
+		$("#hide").click(function(){
+			$(".box").hide(5000);
+
+
+		})
+		$("#show").click(function(){
+			$(".box").show(5000);
+		})
+		$("#down").click(function(){
+			$(".box").slideDown(5000);
+		})
+		$("#up").click(function(){
+			$(".box").slideUp(5000);
+		})
+		$("#out").click(function(){
+			$(".box").fadeOut(5000);
+		})
+		$("#in").click(function(){
+			$(".box").show(5000);
+		})
+		$("#tg").click(function(){
+			$(".box").toggle(5000);
+		})
+		$("#ft").click(function(){
+			$(".box").fadeToggle(5000);
+		})
+	</script>
+	
+</body>
+</html>

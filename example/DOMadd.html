@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+		<style>
+		 	*{
+		 		margin: 0px;
+		 		padding: 0px;
+		 	}
+			.list li{
+				margin-top: 10px;
+				margin-left: 20px;
+			}
+		</style>
+</head>
+<body>
+	<input id="txt" type="text">
+	<input id="bt" type="button" value="添加">
+		<ul class="list">
+			<li>足球</li>
+			<li>羽毛球</li>
+			<li>保龄球</li>
+		</ul>
+	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<script>
+		$("#bt").click(function(){
+			var value = $("#txt").val();
+			var x = "<li>" + value + "</li>"
+			$(".list").append(x);
+		})
+	</script> 
+	
+</body>
+</html>

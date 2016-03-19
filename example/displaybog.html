@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+		<style>
+		 	*{
+		 		margin: 0px;
+		 		padding: 0px;
+		 	}
+			#list{
+				height: 150px;
+
+			}
+			#list li{
+				width: 200px;
+				height: 150px;
+				float: left;
+				margin-left: 10px;
+				list-style: none;
+			}
+			#list li img{
+				width: 200px;
+				height: 150px;
+			}
+			.tp{
+
+				position: absolute;
+			}
+		</style>
+</head>
+<body>
+		<ul id="list">
+			<li><img src="images/container.1.png" alt=""></li>
+			<li><img src="images/container.2.png" alt=""></li>
+			<li><img src="images/container.3.png" alt=""></li>
+		</ul>
+		
+	
+	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<script>
+			$("#list li").mouseenter(function(){
+				var src = $(this).find("img").attr("src");
+				var Img = "<img class='tp' src='" + src + "'>"
+				$("body").append(Img);
+
+			})
+			$("#list li").mousemove(function(event){
+				var x = event.pageX;
+				var y = event.pageY;
+				
+				$(".tp").css({"top":y+10,"left":x+10});
+			})
+			$("#list li").mouseleave(function(){
+				$(".tp").remove();
+			})
+			
+	</script> 
+	
+</body>
+</html>

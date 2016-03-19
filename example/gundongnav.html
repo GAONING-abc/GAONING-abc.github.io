@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+		<style>
+		 	*{
+		 		margin: 0px;
+		 		padding: 0px;
+		 	}
+			#nav{
+				width: 300px;
+				height: 70px;
+				background-color: red;
+			}
+			.list li{
+				width: 100px;
+				height: 70px;
+				line-height: 70px;
+				list-style: none;
+				float: left;
+				overflow: hidden;
+				text-align: center;
+
+			}
+			.list li a{
+				display: block;
+
+			}
+		</style>
+</head>
+<body>
+	<div id="nav">
+		<ul class="list">
+			<li>
+				<a class="top-1" href="">主页</a>
+				<a class="top-2" href="" class=>home</a>
+			</li>
+			<li>
+				<a class="top-1" href="">视频</a>
+				<a class="top-2" href="">viedo</a>
+			</li>
+			
+		</ul>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<script>
+			$(".list>li").mouseenter(function(){
+				// $(this).find(".top-2").animate({"margin-top":"0"},1000);
+				$(this).find(".top-1").animate({"margin-top":"-70px"},1000);  
+				//设置一个a标签的值，不用写两个
+			})
+			$(".list>li").mouseleave(function(){
+				$(this).find(".top-1").animate({"margin-top":"0px"},1000);
+				// $(this).find(".top-1").animate({"margin-top":"0"},1000);
+			})
+	</script>
+	
+</body>
+</html>
