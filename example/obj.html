@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+	<script>
+			//只有对象才能调用方法
+			//函数
+		var cat = {
+			name:"小猪",
+			age:4,
+			color:"black",
+			sayName:function(){
+				console.log("我的名字叫"+this.name);
+				// return this;
+			}
+		}
+			var x = cat.age;
+			console.log(x)
+			
+		
+		// 	eat:function(y){
+		// 		console.log("吃"+y);
+		// 		return this;
+		// 	}
+		// }
+		//  cat.sayName().eat("鱼")
+
+		 	//css方法设置一个值的话它的返回值是对象
+		 	//css方法获取一个值的话它的返回值是获取的值
+		   // var setCss={"width":"100px","height":"200px","background-color":"red"};
+		   // $(".box").css(setCss).css({"width":"500px","background-color":"green"})
+
+
+
+
+
+		   	//日期对象
+		   	// var teDate = new Date();
+
+		   	// var date = teDate.getDate();
+		   	// console.log(date);
+
+		   	// //随机的输出7个数字从5开始
+		   	// var x = 5.987678;
+		   	// var result = Math.floor(Math.random()*7+5);
+		   	// console.log(result)
+
+	</script>
+</body>
+</html>

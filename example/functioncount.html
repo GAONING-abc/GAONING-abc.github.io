@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+
+	</style>
+</head>
+<body>
+		<input id="num1" type="text" >
+
+	
+		<input id="sign" type="text">
+		<input id="num2" type="text">=
+		<input class="result" type="text">
+		<input class="jis" type="button" value="计算">
+	<script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+	<script>
+		$(".jis").click(function(){
+			function count(num1,num2,sign){
+				var result = 0;
+				switch(sign){
+				case "+":result = num1 + num2;break;
+				case "-":result = num1 - num2;break;
+				case "*":result = num1 * num2;break;
+				case "/":result = num1 / num2;break;
+			}
+			return result
+		}
+			var b = count(1,2,"+");
+			console.log(b)	
+	})
+	
+		
+			
+	</script>
+</body>
+</html>
