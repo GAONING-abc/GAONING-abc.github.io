@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="css/huodong.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.min.js"></script>
+
+</head>
+
+<body>
+<div class="chuizi"></div>
+<div class="header">
+	<div class="content-box">
+    	<input type="image" src="images/login_btn_03.jpg" class="header-login"/>
+    </div>
+</div>
+<div class="banner">
+	<div class="content-box">
+    	<p>活动时间：2014年9月1日-2月31日</p>
+        <input type="image" src="images/gopay_07.jpg" class="banner-gopay"/>
+    </div>
+</div>
+<div class="egg-box">
+	<div class="content-box">
+    	<h2>支付一分钱，欢乐砸金蛋</h2>
+        <ul>
+        	<li></li>
+            <li></li>
+            <li class="egg"></li>
+            
+        </ul>
+    </div>
+</div>
+<div class="main">
+	<div class="content-box clearfix">
+    	<div class="main-left">
+        	<h2 class="main-info">活动详情</h2>
+            <div class="left-box">
+                <div class="info-p">
+                </div>
+                <div class="box-p">
+                <p>1、活动时间：2014年9月1日—12月31日</p>
+                <p>2、参与活动的用户需持有并激活青岛农行贷记卡。</p>
+                <p>3、激活青岛农行贷记卡—输入卡号和手机号登录—支付1分钱--参加抽奖。</p>
+                <p>4、 每天每个卡号限参加一次。</p>
+                <p>5、中奖后的个人中心能够查看到自己中得的奖品，充值兑奖后后台留数据，前台清空。</p>
+                <p>6、本活动最终解释权归青岛农行所有。</p>
+                 <ul>
+            	<li><img src="images/money_11.jpg">
+                		100元话费充值卡<br>[100份]
+                </li>
+                <li><img src="images/money_13.jpg">
+                		 50元话费充值卡<br>[1000份]
+                </li>
+                <li><img src="images/money_15.jpg">
+                	2元活动彩金 <br>[10000份]
+                </li>
+           		 </ul>
+                </div>
+               
+            </div>
+            
+        </div>
+        <div class="main-right">
+        	<h2 class="main-prize">我的奖品</h2>
+            <div class="right-box">
+                <div class="box-right">
+                </div>
+                <div class="prize-t">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <th>奖品</th>
+                    <th>时间</th>
+                </tr>
+                <tr>
+                    <td>50元话费</td>
+                    <td>2014年8月26日</td>
+                </tr>
+                <tr>
+                    <td>50元话费</td>
+                    <td>2014年8月26日</td>
+                </tr>
+                <tr>
+                    <td>50元话费</td>
+                    <td>2014年8月26日</td>
+                </tr>
+                <tr>
+                    <td>50元话费</td>
+                    <td>2014年8月26日</td>
+                </tr>
+                <tr>
+                    <td>50元话费</td>
+                    <td>2014年8月26日</td>
+                </tr>
+                <tr>
+                    <td>50元话费</td>
+                    <td>2014年8月26日</td>
+                </tr>
+                <tr>
+                    <td>50元话费</td>
+                    <td>2014年8月26日</td>
+                </tr>
+                <tr>
+                    <td>50元话费</td>
+                    <td>2014年8月26日</td>
+                </tr>
+                <tr>
+                    <td>50元话费</td>
+                    <td>2014年8月26日</td>
+                </tr>
+                </table>
+                    <a class="prev">上一页</a>
+                    <a class="next">下一页</a>
+                </div>
+             </div>
+        </div>
+	</div>
+</div>
+<div id="mask">
+</div>
+<!--登录-->
+<div class="confirm">
+	<div  class="fath">
+	<p>输入卡号和手机号登录参与活动</p>
+    <span class="close">
+    	<img src="images/cacke_02_03.jpg">
+    </span>
+    <div class="conf-box">
+    	<div class="box_o"><span>卡　号:</span>　<input type="text"/></div>
+        <div><span>手机号:</span>　<input type="text"/></div>
+        <a>确　定</a>
+    </div>
+    </div>
+</div>
+<!--中奖了-->
+<div class="getprize">
+	<div  class="fath">
+	
+    <span class="close">
+    	<img src="images/cacke_02_03.jpg">
+    </span>
+   	<p>金花四溅呀，恭喜您中得50元话费！
+记得明天再来哦！</p>
+	<a>返回首页</a>
+    </div>
+</div>
+<!--不中-->
+<div class="nogetprize">
+	<div  class="fath">
+	
+    <span class="close">
+    	<img src="images/cacke_02_03.jpg">
+    </span>
+   	<p>就差一点点,<br>
+没关系,明天我们再继续,加油哦！</p>
+	<a>返回首页</a>
+    </div>
+</div>
+
+<script>
+$(".chuizi").hide();
+$(".egg-box li").mousemove(function (e) {
+		$(".chuizi").show();
+		$(".chuizi").css({ "left": e.pageX + 0, "top": e.pageY - 60 });
+	}).mouseout(function () { $(".chuizi").hide() });
+
+function getHeight(){
+	var isIE = !!window.ActiveXObject;  
+	var isIE6 = isIE && !window.XMLHttpRequest;  
+	if(isIE6){
+		var height= document.body.clientHeight;	
+		document.getElementById("mask").style.height=height+"px"
+	}
+}
+$(".egg-box li:eq(0)").click(function(){
+	getHeight();
+	$(".confirm").show();
+	$("#mask").show();
+	})
+$(".egg-box li:eq(1)").click(function(){
+	getHeight();
+	$(".getprize").show();
+	$("#mask").show();
+	})
+$(".egg-box li:eq(2)").click(function(){
+	getHeight();
+	$(".nogetprize").show();
+	$("#mask").show();
+	})
+$(".close").click(function(){
+	$(".confirm,.getprize,.nogetprize").hide();
+	$("#mask").hide();
+	})
+</script>
+<!--[if lt IE 7]>
+<script src="js/ie6png.js"></script>
+<script>
+
+  DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+</body>
+</html>

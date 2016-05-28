@@ -12,7 +12,7 @@ body{
 }
 body a{
 	transition: 0.5s all ease;
-	-webkit-transition: 0.5s all ease;
+	-webkit-transition: a0.5s all ease;
 	-moz-transition: 0.5s all ease;
 	-o-transition: 0.5s all ease;
 	-ms-transition: 0.5s all ease;
@@ -541,7 +541,9 @@ figure.effect-bubba {
 figure.effect-bubba:hover img {
 	opacity: 0.3;
 }
-
+#lianjie{
+  color: #fff;
+}
 figure.effect-bubba figcaption::before,
 figure.effect-bubba figcaption::after {
 	position: absolute;
@@ -690,7 +692,7 @@ width:100%;
 	cursor: pointer;
 	z-index: 100;
 }
-.nbs-flexisel-nav-left {
+/*.nbs-flexisel-nav-left {
 	left: 47.7%;
 	top: 113% !important;
 	background: url(../images/themes.png) no-repeat 0px 0px;
@@ -699,7 +701,7 @@ width:100%;
 	right: 47.7%;
 	top: 113% !important;
 	background: url(../images/themes.png) no-repeat -24px 0px;
-}
+}*/
 /*--//flexisel--*/
 /*--//team--*/
 /*--contact-page--*/

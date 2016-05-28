@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0}
+*html{
+background-image:url(about:blank);
+background-attachment:fixed;
+}
+body{font-family:"STHeiti","Microsoft YaHei",微软雅黑}
+ul li{ list-style:none}
+h2{ font-weight:normal; font-size:22px; color:#FFF}
+.clearfix:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.content-box{ width:990px; margin:0 auto; position:relative}
+.chuizi{position:absolute; background:url(../images/chuizi_03.png) no-repeat 0px 0px; width:106px; height:130px; cursor:none; display:none}
+/*********logo*****/
+.header{ background:url(../images/header_01.jpg) no-repeat top center; height:63px; min-width:990px}
+.header-login{ float:right; margin-right:19px; margin-top:14px;}
+/*********banner****/
+.banner{ background:url(../images/header_02.jpg) no-repeat top center; height:366px;min-width:990px}
+.banner .content-box{ height:366px;}
+.banner p{ color:#FFF; font-size:18px; font-style:italic; padding-top:297px; padding-left:497px;}
+.banner-gopay{ position:absolute; right:20px; bottom:30px;}
+/*********egg****/
+.egg-box{ background:url(../images/header_03.jpg) no-repeat top center; height:443px;min-width:990px}
+.egg-box ul{ padding-top:61px; width:784px; margin:0 auto}
+.egg-box ul li{  width:196px; height:269px; float:left; margin-right:98px;}
+.egg-box ul .egg{ margin-right:0}
+.egg-box h2{ padding-left:30px; padding-top:9px}
+/*********main****/
+.main-left,.main-right{ float:left;}
+.main-left{ width:577px; }
+
+.main-left p{  line-height:30px; font-size:14px; color:#FFF; width:515px;}
+.left-box,.right-box{ position:relative; clear:both; margin-left:17px;}
+.box-p{ position:absolute; left:33px; top:33px; width:500px }
+.info-p{ width:579px; height:394px;clear:both; background:black; opacity:0.1; filter:alpha(opacity=10); }
+.box-p img{ display:block; margin:0 auto; margin-bottom:8px;}
+.box-p ul{ padding-top:10px; border-top:1px solid #992de7; margin-left:26px; width:515px; margin-top:20px}
+.main-right{ width:362px; margin-left:16px;_margin-left:8px;}
+
+.box-right{ width:362px; clear:both; height:394px;background:black; opacity:0.1; filter:alpha(opacity=10); }
+.main{ background:url(../images/main_bg_04.jpg)  ; padding-bottom:28px}
+.main ul{ width:515px}
+.main ul li{ float:left; width:108px; text-align:center; font-size:14px; color:#FFF; margin-right:46px;}
+
+.prize-t{ position:absolute; top:32px; left:32px; font-size:14px; }
+.prize-t table{ width:285px; color:#FFF; text-align:center}
+.prize-t table th{ font-weight:normal; border-bottom:1px solid #992de7; padding-bottom:3px }
+.prize-t table td{ padding-bottom:5px; padding-top:3px}
+.prize-t a{ display:block; width:55px; height:23px; background:#bf8ae5; line-height:23px; float:left; text-decoration:underline; font-size:14px; color:#390062; text-align:center}
+.prev{ margin-left:81px; margin-right:14px;_margin-left:40px;}
+.main h2{ background:url(../images/h2_bg_07.jpg) no-repeat; width:138px; height:44px; text-align:center; line-height:44px; float:left; margin-left:17px; margin-bottom:22px;_margin-left:8px;}
+/*******login****/
+#mask{ height:100%; position:fixed;_position:absolute; opacity:0.3; background:#000; filter:alpha(opacity=50); width:100%; top:0; z-index:50; left:0; display:none}
+.confirm{  position:fixed; top:50%; left:50%; margin-left:-377px; margin-top:-214px;_position:absolute; _left:50%; _bottom:auto; background:url(../images/confirm_03.png) no-repeat top center;
+_top:expression(eval(document.documentElement.scrollTop));_margin-top:150px; width:755px; height:429px; display:none; z-index:100 }
+.getprize{position:fixed; top:50%; left:50%; margin-left:-377px; margin-top:-214px;_position:absolute; _left:50%; _bottom:auto; background:url(../images/zhong_03.png) no-repeat top center;
+_top:expression(eval(document.documentElement.scrollTop));_margin-top:150px; width:755px; height:429px; display:block; z-index:100; display:none}
+.nogetprize{position:fixed; top:50%; left:50%; margin-left:-377px; margin-top:-214px;_position:absolute; _left:50%; _bottom:auto; background:url(../images/no_getprize_03.png) no-repeat top center;
+_top:expression(eval(document.documentElement.scrollTop));_margin-top:150px; width:755px; height:429px; display:block; z-index:100; display:none}
+.confirm a{ color:#dd452e; font-size:33px; display:block; margin-left:125px; margin-top:59px; cursor:pointer;  width:200px; height:70px; text-align:center; line-height:70px;_margin-top:55px;}
+.fath{ position:relative}
+.close{ display:block; position:absolute; right:80px; top:18px; cursor:pointer}
+.confirm p{ text-align:center; font-size:30px; color:#f62e0f; padding-top:47px; padding-bottom:67px;}
+.conf-box{ margin:0 auto; width:400px}
+
+.conf-box span{ color:#f62e0f; font-size:24px; line-height:44px;  vertical-align:middle}
+.conf-box input{ width:290px; padding-left:6px; line-height:44px; height:44px; border:1px solid #de462f; vertical-align:middle}
+.getprize p{ font-size:30px; color:#f62e0f; width:478px; padding-left:80px; padding-top:49px; }
+.getprize a{ color:#dd452e; font-size:33px; display:block; margin-left:455px; margin-top:195px; cursor:pointer;  width:200px; height:70px; text-align:center; line-height:70px; _margin-top:190px;}
+.nogetprize p{ font-size:30px; color:#f62e0f; width:478px; padding-left:80px; padding-top:49px; }
+.nogetprize a{ color:#dd452e; font-size:33px; display:block; margin-left:455px; margin-top:195px; cursor:pointer;  width:200px; height:70px; text-align:center; line-height:70px; _margin-top:190px;}
+.box_o{ padding-bottom:19px;}
+
+
