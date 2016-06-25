@@ -59,6 +59,8 @@ body a:hover{
 }
 .logo a {
   display: block;
+  font-size: 30px;
+  color: #fff;
 }
 .logo a img {
   width:initial;
